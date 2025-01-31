@@ -136,6 +136,30 @@
     border-radius: 50%;
   }
 
+  .search-container.nav-tools .search-wrapper, .search-container.nav-tools .search.block {
+    height: 43px;
+    width:200px;
+  }
+   
+   
+  .search-container.nav-tools .search-box {
+    display: flex;
+    position: relative;
+  }
+   
+  .search-container.nav-tools .icon.icon-search {
+    position: absolute;
+    right: 12px;
+  }
+   
+  @media (max-width: 900px) {
+    .search-container.nav-tools .search-wrapper,
+    .search-container.nav-tools .search.block {
+      height: 30px;
+      width: 140px;
+    }
+  }
+
   @media (max-width: 900px) {
     .search .search-box input {
       margin-right: 10px;
