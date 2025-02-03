@@ -17,11 +17,11 @@
 
 .columns > div > .columns-img-col img {
   display: block;
+  height:100%;
 }
 
 @media (width >= 900px) {
   .columns > div {
-    align-items: center;
     flex-direction: unset;
     gap: 24px;
   }
@@ -30,4 +30,14 @@
     flex: 1;
     order: unset;
   }
+}
+
+.columns-wrapper .columns.columns-2-cols > div > div .button-container .button{
+  background-color: #ffea00;
+  border-radius: 0%;
+  color:black;
+}
+
+.columns-wrapper .columns.columns-2-cols{
+  background-color: #ebebeb;
 }

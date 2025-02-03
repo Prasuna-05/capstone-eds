@@ -6,6 +6,20 @@ header .nav-wrapper {
   position: fixed;
 }
 
+header .nav-wrapper.scroll-header {
+  padding-bottom: 10px;
+  padding-top: 40px;
+  margin-top: -60px;
+  box-shadow: 0 8px 20px 0 rgba(0 0 0 / 26%);
+}
+
+header .top-nav-wrapper {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 6px;
+}
+
 header nav {
   box-sizing: border-box;
   display: grid;
@@ -16,9 +30,9 @@ header nav {
   gap: 0 24px;
   margin: auto;
   max-width: 1248px;
-  height: var(--nav-height);
   padding: 0 24px;
   font-family: var(--body-font-family);
+  height: 104px;
 }
 
 header nav[aria-expanded='true'] {
@@ -50,8 +64,38 @@ header nav p {
   line-height: 1;
 }
 
+.nav-list a {
+  color: white;
+  text-decoration: none;
+}
+
 header nav a:any-link {
   color: currentcolor;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  column-gap: 2rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 5rem; 
+}
+
+.nav-list li {
+  cursor: pointer;
+}
+
+.nav-brand > div > p > a{
+  font-size:55px;
+  word-break: auto-phrase;
+  margin-left: 55px;
+}
+
+.nav-list a:hover {
+  text-decoration: underline;
 }
 
 /* hamburger */
@@ -220,13 +264,27 @@ header nav .nav-sections ul > li > ul > li {
 
   header nav .nav-sections ul {
     display: flex;
-    gap: 24px;
-    margin: 0;
+
+  }
+ 
+  header nav .nav-sections .default-content-wrapper{
+    display: flex;
+    justify-content: flex-end;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li {
     flex: 0 1 auto;
     position: relative;
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul > li > a{ 
+    padding:16px;
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul > li > a:hover {
+    background-color: yellow;
+    text-decoration:none;
+    padding:10px;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul {
@@ -265,4 +323,24 @@ header nav .nav-sections ul > li > ul > li {
 /* tools */
 header nav .nav-tools {
   grid-area: tools;
+}
+
+.nav-brand > div > p > a:hover{
+  text-decoration: none;
+}
+
+.top-nav-bg {
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  width: 100%;
+}
+
+@media (width <= 900px) {
+  .nav-brand > div > p > a {
+    font-size: 20px;
+    word-break: auto-phrase;
+    margin-left: 0;
+  }
 }
