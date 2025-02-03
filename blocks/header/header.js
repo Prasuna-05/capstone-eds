@@ -165,31 +165,31 @@ export default async function decorate(block) {
   block.append(navWrapper);
 
   const header = document.querySelector('.nav-wrapper');
-  window.addEventListener("scroll", () => {
-      header?.classList.toggle('scroll-header', window.scrollY > 40);
+  window.addEventListener('scroll', () => {
+    header?.classList.toggle('scroll-header', window.scrollY > 40);
   });
 
-  const headerBlock = document.querySelector(".header.block");
+  const headerBlock = document.querySelector('.header.block');
   if (headerBlock) {
-    const topNavDiv = document.createElement("div");
-    topNavDiv.className = "top-nav top-nav-bg";
-    
-    const navList = document.createElement("ul");
-    navList.className = "nav-list"; 
-    
-    const loginItem = document.createElement("li");
-    loginItem.textContent = "LOGIN";
-    
-    const signupItem = document.createElement("li");
-    const signupLink = document.createElement("a");
-    signupLink.textContent = "SIGN UP";
-    signupLink.href = "/pages/sign-up"; 
+    const topNavDiv = document.createElement('div');
+    topNavDiv.className = 'top-nav top-nav-bg';
+
+    const navList = document.createElement('ul');
+    navList.className = 'nav-list';
+
+    const loginItem = document.createElement('li');
+    loginItem.textContent = 'LOGIN';
+
+    const signupItem = document.createElement('li');
+    const signupLink = document.createElement('a');
+    signupLink.textContent = 'SIGN UP';
+    signupLink.href = '/pages/sign-up';
     signupItem.appendChild(signupLink);
-    
+
     navList.appendChild(loginItem);
     navList.appendChild(signupItem);
     topNavDiv.appendChild(navList);
-    
+
     headerBlock.prepend(topNavDiv);
   }
 }

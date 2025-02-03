@@ -8,7 +8,6 @@ function createCard(data) {
     ? '../../icons/facebook.svg'
     : data.image;
   const img = createOptimizedPicture(imgUrl, data.title || 'Image', false, [{ width: '750' }]);
-  console.log(data);
 
   const header = document.createElement('h3');
   header.textContent = data.title;
