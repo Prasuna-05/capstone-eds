@@ -25,31 +25,3 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
-
-.cards-container .default-content-wrapper .button-container .button{
-  background-color: #ffea00;
-  border-radius: 0%;
-  color:black;
-}
-
-.cards-container .cards-wrapper .cards .cards-card-body p:nth-child(2){
-  font-size: 0.85em;
-  color: #555;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.about-us-contributors .cards .cards-card-image img {
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-}
-
-.about-us-contributors .cards > ul > li{
-  border:none;
-}
-
-.about-us-contributors .cards-wrapper .cards {
-  text-align: center;
-}
