@@ -1,6 +1,7 @@
 footer {
-  background-color: var(--light-color);
+  background-color: var(--text-color);
   font-size: var(--body-font-size-xs);
+  color: white;
 }
 
 footer .footer > div {
@@ -16,5 +17,63 @@ footer .footer p {
 @media (width >= 900px) {
   footer .footer > div {
     padding: 40px 32px 24px;
+  }
+}
+
+.footer-layout > div > ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer-layout > div > ul > li {
+  list-style-type: none;
+  padding:16px;
+  color: white;
+}
+
+.footer-layout > div > ul > li > a{
+  color: white;
+}
+
+.footer-layout .default-content-wrapper{
+  display: flex;
+  column-gap: 5rem;
+  padding-bottom: 30px;
+}
+
+
+.footer-layout .default-content-wrapper p a{
+  background: transparent;
+  font-size: var(--heading-font-size-xxl);
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: var(--background-color);
+}
+
+footer .section:last-child > div {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+}
+
+@media (max-width: 900px) {
+  .footer-layout > div > ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      justify-content: center;
+  }
+
+  .footer-layout .default-content-wrapper {
+      flex-direction: column;
+      row-gap: 2rem;
+  }
+
+  .footer-layout > div > ul > li {
+    padding:0px;
   }
 }
