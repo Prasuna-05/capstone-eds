@@ -50,6 +50,6 @@ export default async function decorate(block) {
     parentDiv.append(cardsContainer);
     queryIndexLink.replaceWith(parentDiv);
   } catch (error) {
-    console.error('Error creating dynamic magazine block:', error);
+    throw new Error(`Error creating dynamic magazine block: ${error.message}`);
   }
 }
