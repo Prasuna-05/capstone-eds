@@ -60,7 +60,7 @@ footer .section:last-child > div {
   gap: .6rem;
 }
 
-@media (max-width: 900px) {
+@media (width <= 900px) {
   .footer-layout > div > ul {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -74,6 +74,6 @@ footer .section:last-child > div {
   }
 
   .footer-layout > div > ul > li {
-    padding:0px;
+    padding:0;
   }
 }

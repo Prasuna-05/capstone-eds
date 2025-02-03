@@ -152,7 +152,7 @@
     right: 12px;
   }
    
-  @media (max-width: 900px) {
+  @media (width <= 900px) {
     .search-container.nav-tools .search-wrapper,
     .search-container.nav-tools .search.block {
       height: 30px;
@@ -160,7 +160,7 @@
     }
   }
 
-  @media (max-width: 900px) {
+  @media (width <= 900px) {
     .search .search-box input {
       margin-right: 10px;
       padding:5px;
