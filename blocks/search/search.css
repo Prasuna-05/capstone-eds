@@ -149,7 +149,7 @@
    
   .search-container.nav-tools .icon.icon-search {
     position: absolute;
-    right: 12px;
+    right: 20px;
   }
    
   @media (width <= 900px) {
